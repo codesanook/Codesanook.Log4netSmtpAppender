@@ -61,13 +61,15 @@ namespace CodeSanook.Log4netSmtpAppender
                 From = smtpSettingsPart.Address,
                 To = moduleSettingPart.ExceptionEmailToAddress,
 
+                //server and authentication
                 SmtpHost = smtpSettingsPart.Host,
+                Port = smtpSettingsPart.Port,
+                Authentication  = SmtpAppender.SmtpAuthentication.Basic,
+                EnableSsl = smtpSettingsPart.EnableSsl,
                 Username = smtpSettingsPart.UserName,
                 Password = smtpSettingsPart.Password,
-                Port = smtpSettingsPart.Port,
-                EnableSsl = smtpSettingsPart.EnableSsl, 
-
                 BufferSize = 1,
+
                 Lossy = false,
                 Layout = patternLayout,
             };
