@@ -1,9 +1,9 @@
-using CodeSanook.Common.Modules;
+using Codesanook.Common.Modules;
 using Orchard.Logging;
 using System;
 using System.Web.Mvc;
 
-namespace CodeSanook.Log4netSmtpAppender.Controllers
+namespace Codesanook.Log4netSmtpAppender.Controllers
 {
     public class TestController : Controller
     {

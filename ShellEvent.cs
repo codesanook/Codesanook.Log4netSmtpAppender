@@ -1,4 +1,4 @@
-using CodeSanook.Configuration.Models;
+using Codesanook.Configuration.Models;
 using log4net;
 using log4net.Appender;
 using log4net.Core;
@@ -11,7 +11,7 @@ using Orchard.Email.Models;
 using Orchard.Environment;
 using System.Linq;
 
-namespace CodeSanook.Log4netSmtpAppender
+namespace Codesanook.Log4netSmtpAppender
 {
     //https://stackoverflow.com/a/9029457/1872200
     public class ShellEvent : IOrchardShellEvents
