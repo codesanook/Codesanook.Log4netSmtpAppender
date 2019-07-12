@@ -1,8 +1,8 @@
-Name: CodeSanook.Log4netSmtpAppender
+Name: Codesanook.Log4netSmtpAppender
 AntiForgery: enabled
-Author: CodeSanook Team
+Author: Codesanook Team
 Website: https://www.codesanook.com
 Version: 1.0
 OrchardVersion: 1.0
 Description: Description for the module
-Dependencies: CodeSanook.Common, CodeSanook.Configuration
+Dependencies: Codesanook.Common, Codesanook.Configuration
