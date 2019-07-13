@@ -106,8 +106,6 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="Web.config" />
-    <Content Include="Scripts\Web.config" />
-    <Content Include="Styles\Web.config" />
     <Content Include="Module.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -134,8 +132,9 @@
       <Name>Orchard.Email</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Views\" />
+    <Content Include="README.md" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
