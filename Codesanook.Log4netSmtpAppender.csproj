@@ -103,6 +103,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Handlers\SmtpAppenderSettingPartHandler.cs" />
+    <Compile Include="Models\SmtpAppenderSettingPart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShellEvent.cs" />
   </ItemGroup>
@@ -122,20 +124,18 @@
       <Name>Orchard.Core</Name>
       <Private>$(MvcBuildViews)</Private>
     </ProjectReference>
-    <ProjectReference Include="..\CodeSanook.Common\CodeSanook.Common.csproj">
+    <ProjectReference Include="..\Codesanook.Common\Codesanook.Common.csproj">
       <Project>{7104e4b7-0fdc-4734-a812-1c6a8f71635d}</Project>
-      <Name>CodeSanook.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CodeSanook.Configuration\CodeSanook.Configuration.csproj">
-      <Project>{55a5af31-438d-4712-b8b6-ee01327842ae}</Project>
-      <Name>CodeSanook.Configuration</Name>
+      <Name>Codesanook.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\Orchard.Email\Orchard.Email.csproj">
       <Project>{05660f47-d649-48bd-9ded-df4e01e7cff9}</Project>
       <Name>Orchard.Email</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts\SmtpAppenderSetting.cshtml" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="README.md" />
   </ItemGroup>

@@ -1,0 +1,11 @@
+@model Codesanook.Log4netSmtpAppender.Models.SmtpAppenderSettingPart
+<fieldset>
+    <legend>@T("SMTP appender settings")</legend>
+
+    <div>
+        @Html.LabelFor(m => m.ExceptionEmailToAddress)
+        @Html.TextBoxFor(m => m.ExceptionEmailToAddress, new { @class = "text large" })
+        @Html.ValidationMessageFor(m => m.ExceptionEmailToAddress, "*")
+    </div>
+
+</fieldset>
