@@ -56,7 +56,7 @@ namespace Codesanook.Log4netSmtpAppender
                 //server and authentication
                 SmtpHost = smtpSettingsPart.Host,
                 Port = smtpSettingsPart.Port,
-                Authentication  = SmtpAppender.SmtpAuthentication.Basic,
+                Authentication = SmtpAppender.SmtpAuthentication.Basic,
                 EnableSsl = smtpSettingsPart.EnableSsl,
                 Username = smtpSettingsPart.UserName,
                 Password = smtpSettingsPart.Password,
@@ -70,8 +70,8 @@ namespace Codesanook.Log4netSmtpAppender
             // https://stackoverflow.com/a/34700980/1872200
             var atleastErrorLevelFilter = new LevelRangeFilter() { LevelMin = Level.Error };
             appender.AddFilter(atleastErrorLevelFilter);
-
             appender.ActivateOptions();
+
             return appender;
         }
     }
