@@ -50,7 +50,7 @@ namespace Codesanook.Log4netSmtpAppender
             var appender = new SmtpAppender()
             {
                 Subject = "System logging email",
-                From = smtpSettingsPart.Address,
+                From = smtpSettingsPart.FromAddress,
                 To = smtpAppenderSettingPart.ExceptionEmailToAddress,
 
                 //server and authentication
